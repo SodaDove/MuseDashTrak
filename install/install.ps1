@@ -122,6 +122,10 @@ if (-not $GamePath) { $GamePath = Find-MuseDash }
 if (-not $GamePath -or -not (Test-Path (Join-Path $GamePath 'MuseDash.exe'))) {
     throw 'Muse Dash not found. Pass -GamePath "D:\...\Muse Dash".'
 }
+if (-not (Test-Path (Join-Path $dist 'MuseDashTrak.dll'))) {
+    throw "dist\MuseDashTrak.dll not found. Run build.ps1 first, or download the release zip from GitHub."
+}
+
 Write-Step "game: $GamePath"
 
 if (-not (Test-Path (Join-Path $GamePath 'MelonLoader'))) {

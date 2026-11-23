@@ -1,0 +1,2 @@
+🔥 {song}{lv} {acc}% {score}{combo}
+🏁 {song}{lv} {acc}% {score}

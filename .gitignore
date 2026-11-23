@@ -1,0 +1,18 @@
+# local build tools / scratch
+_tools/
+_scratch/
+_faketest/
+_test/
+
+# build outputs (published as GitHub Releases instead)
+dist/*.dll
+dist/*.exe
+dist/*.zip
+release/
+
+# generic
+bin/
+obj/
+.vs/
+*.user
+*.log
